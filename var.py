@@ -6,7 +6,7 @@ st.markdown("Balai Svyam Seva Sasthan       Surpura")  # ← Yahan se 📊 hata 
 
 def load_data():
     # encoding fix aur khali rows hatana
-    df = pd.read_csv("LTM.csv", header=2, encoding='latin-1').dropna(how='all')
+    df = pd.read_csv(r"e:\python\LTM.csv", header=2, encoding='latin-1').dropna(how='all')
     df.columns = df.columns.str.strip()
     
     if 'phone' in df.columns:
