@@ -6,7 +6,7 @@ st.markdown("Balai Svyam Seva Sasthan       Surpura")  # ← Yahan se 📊 hata 
 
 def load_data():
     # --- A2 cell se date nikalne ke liye ---
-    raw_df = pd.read_csv("LTM.csv", header=None, nrows=2, encoding='latin-1')
+    raw_df = pd.read_csv(r"LTM.csv", header=None, nrows=2, encoding='latin-1')
     try:
         # Excel ka A2 cell = Row Index 1 (2nd row) aur Column Index 0 (A column)
         extracted_date = raw_df.iloc[1, 0] 
