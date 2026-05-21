@@ -14,7 +14,7 @@ def load_data():
         extracted_date = ""
     
     # Data loading (Header=2 se)
-    df = pd.read_csv(r"e:\python\LTM.csv", header=2, encoding='latin-1').dropna(how='all')
+    df = pd.read_csv(r"LTM.csv", header=2, encoding='latin-1').dropna(how='all')
     df.columns = df.columns.str.strip()
     
     # Phone number ko normal string rakhna taaki search sahi ho
